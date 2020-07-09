@@ -1,0 +1,194 @@
+body{
+    font-family:sans-serif;
+    color:#333;
+    text-align:center;
+}
+
+table{
+    border-spacing: 0px;
+}
+
+
+h1{
+    margin:80px 0
+}
+.btn {
+    background: #ff5d00;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 4px 5px;
+    margin:10px;
+    text-decoration: none;
+    text-align: center;
+    min-width: 60px;
+    position: relative;
+    transition: color .1s ease;
+}
+.btn:hover {
+    background: #c72339;
+}
+.btn.btn-big {
+    font-size: 18px;
+    padding: 15px 20px;
+    min-width: 100px;
+}
+.btn-close {
+    color: #e60023;
+    font-size: 30px;
+    text-decoration: none;
+    padding:10px;
+    position: absolute;
+    right: 7px;
+    top: 0;
+}
+.btn-close:hover {
+    color: #333;
+}
+.modal:before {
+    content: "";
+    display: none;
+    background: rgba(230,0,35,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+.opened:before {
+    display: block;
+}
+.opened .modal-dialog {
+    transform: translate(0, 0);
+    top: 20%;
+}
+.modal-dialog {
+    background: #fefefe;
+    border: #333333 solid 0px;
+    border-radius: 5px;
+    margin-left: -25%;
+    text-align:center;
+    position: fixed;
+    left: 55%;
+    top: -100%;
+    z-index: 11;
+    width: 590px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.3);
+    transform: translate(0, -500%);
+    transition: transform 0.3s ease-out;
+}
+.modal-body {
+    padding: 20px;
+}
+.modal-body input{
+    width:190px;
+    padding:4px;
+    border:1px solid #ddd;
+    color:#888;
+    outline:0;
+    font-size:10px;
+    font-weight:bold;
+    margin-top: 5px;
+}
+.modal-header,
+.modal-footer {
+    padding: 10px 20px;
+}
+.modal-header {
+    border-bottom: #eeeeee solid 1px;
+}
+.modal-header h2 {
+    font-size: 20px;
+}
+
+#sendForm{
+    background: #e60023;
+    border-radius: 20px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-align: center;
+    min-width: 60px;
+    position: relative;
+    transition: color .1s ease;
+}
+.numbers{
+
+}
+
+.deleteButton{
+    color: red;
+    font-size: 15px;
+    width: 10px;
+    font-weight:bold;
+    position: relative;
+    left: 187px;;
+    top: -20px;
+    cursor: pointer;
+
+}
+
+.number, .numbers{
+    width: 200px;
+    position: relative;
+    height: 22px;
+    margin: 0 15px;
+    display: inline-block;
+}
+.line{
+    margin: 10px;
+
+}
+
+.valid{
+    border:1px solid #61ab1d;
+}
+.invalid{
+    border:1px solid #e52e2c;
+}
+
+INPUT.text {
+    border: 1px solid #ccc; /* Исходная рамка вокруг поля */
+    width: 80%; /* Ширина поля */
+}
+INPUT.text:focus {
+    border: 1px solid #39c; /* Рамка при получении фокуса */
+}
+
+
+.attention{
+    position: relative;
+    font-size: 9px;
+    color: #e52e2c;
+    left: -196px;
+    top: 6px;
+}
+
+#salaryUp,#salaryDown,#creatUp,#creatDown{
+    display: inline-block;
+    padding: 5px;
+    font-size: 9px;
+    color: white;
+    background: #333333;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.error{
+    border:1px solid red;
+    background:rgba(255, 5, 5,0.2);;
+}
+.not_error{
+    border:1px solid #5fcc02;
+    background: rgba(26, 255, 5,0.2);;
+}
+
+#pagination a {
+    display:inline-block;
+    margin-right:5px;
+
+}
